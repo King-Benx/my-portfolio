@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/King-Benx/my-portfolio/issues"
   },
-  "homepage": "https://github.com/King-Benx/my-portfolio#readme"
+  "homepage": "https://github.com/King-Benx/my-portfolio#readme",
+  "devDependencies": {
+    "hint": "^7.1.3"
+  }
 }
