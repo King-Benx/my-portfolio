@@ -1,0 +1,40 @@
+:root{
+    --btn-clr-secondary: #36B37F;
+    --btn-clr-primary: #008552;
+    --clr-success:#36B37E;
+    --clr-accent:#172B4D;
+    --clr-green-300:#EBF0EE;
+    --clr-green-600:#C5E9DA;
+    --clr-green-900:#36B37E;
+    --clr-secondary:#fff;
+    --clr-primary:##28352F;
+}
+
+*,*::after,*::before{
+    margin:0px;
+    box-sizing: border-box;
+    padding:0px;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+}
+
+nav {
+    width:100vw;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0.2rem;
+}
+
+nav > div > span{
+    font-size: 1.2rem;
+}
+
+nav > button{
+    border:none;
+    background: transparent;
+}
