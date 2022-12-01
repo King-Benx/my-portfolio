@@ -19,6 +19,7 @@
 body{
     width:100vw;
     height:100vh;
+    font-family: 'Inter';
 }
 
 nav {
@@ -27,14 +28,52 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items:center;
-    padding: 0.2rem;
+    padding-block: 4px;
 }
 
 nav > div > span{
     font-size: 1.2rem;
 }
 
-nav > button{
+nav > button,header#headline>button{
     border:none;
     background: transparent;
+    cursor: pointer;
+}
+
+#headline{
+    width:100vw;
+    height:90vh;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    background-image:url(../images/header.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding-inline: 24px;
+    padding-block: 3rem;
+}
+
+#intro h1{
+    margin-block: 64px;
+    font-size: 40px;
+}
+
+#secondary{
+    font-size: 20px;
+}
+
+#intro >h1> span{
+    color:var(--clr-success);
+}
+
+.social{
+  margin-block:58px;
+}
+
+.social > a{
+    text-decoration:none;
+    padding-inline: 0.3rem;
 }
