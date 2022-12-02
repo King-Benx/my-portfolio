@@ -8,7 +8,7 @@
   --clr-green-900: #36b37e;
   --clr-secondary: #fff;
   --clr-primary: #28352f;
-  --clr-dark:#000;
+  --clr-dark: #000;
 }
 
 *,
@@ -37,7 +37,7 @@ header {
 
 header > div > a {
   text-decoration: none;
-  color:var(--clr-dark);
+  color: var(--clr-dark);
   font-size: 1.2rem;
 }
 
