@@ -114,6 +114,7 @@ header > div > a {
 #recent-works,
 #about-me {
   text-align: center;
+  padding-block:62px;
 }
 
 #recent-works > hr {
@@ -124,6 +125,7 @@ header > div > a {
   border: none;
   border-radius: 24px;
   margin-inline: auto;
+  margin-bottom: 54px;
 }
 
 #recent-works > .container,
@@ -133,7 +135,7 @@ header > div > a {
   padding-inline: 10px;
   width: min(95%, 70rem);
   margin-inline: auto;
-  margin-block: 62px;
+  /* margin-block: 62px; */
 }
 
 .card {
