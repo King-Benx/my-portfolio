@@ -3,12 +3,15 @@
   --btn-clr-primary: #008552;
   --clr-success: #36b37e;
   --clr-accent: #172b4d;
-  --clr-green-300: #ebf0ee;
+  --clr-img-300: #ebf0ee;
   --clr-green-600: #c5e9da;
   --clr-green-900: #36b37e;
   --clr-secondary: #fff;
   --clr-primary: #28352f;
   --clr-dark: #000;
+  --clr-gray: #d0d9d4;
+  --clr-text-card: #3a4a42;
+  --clr-text-about: #42526e;
 }
 
 *,
@@ -23,6 +26,26 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: "Inter", sans-serif;
+  margin-inline: auto;
+  background-color: var(--clr-secondary);
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 52px;
+  color: var(--clr-accent);
+}
+
+header > button,
+#headline > button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+#section-header > h2,
+#section-footer > button {
+  width: 50%;
 }
 
 header {
@@ -39,13 +62,6 @@ header > div > a {
   text-decoration: none;
   color: var(--clr-dark);
   font-size: 1.2rem;
-}
-
-header > button,
-section#headline > button {
-  border: none;
-  background: transparent;
-  cursor: pointer;
 }
 
 #headline {
@@ -67,6 +83,7 @@ section#headline > button {
   margin-block: 64px;
   font-size: 40px;
   font-weight: 800;
+  color: var(--clr-accent);
 }
 
 #secondary {
@@ -92,4 +109,146 @@ section#headline > button {
 
 .social > ul > li > a {
   text-decoration: none;
+}
+
+#recent-works,
+#about-me {
+  text-align: center;
+}
+
+#recent-works > hr {
+  margin-top: 24px;
+  width: 48px;
+  height: 4px;
+  background-color: var(--clr-green-900);
+  border: none;
+  border-radius: 24px;
+  margin-inline: auto;
+}
+
+#recent-works > .container,
+#about-me > .container {
+  display: grid;
+  gap: 13px;
+  padding-inline: 10px;
+  width: min(95%, 70rem);
+  margin-inline: auto;
+  margin-block: 62px;
+}
+
+.card {
+  border: 1px solid var(--clr-gray);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card > .card-image {
+  height: 252px;
+  background-color: var(--clr-img-300);
+}
+
+.card > .card-body {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  height: 222px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button {
+  padding: 12px;
+  background-color: var(--btn-clr-secondary);
+  font-size: 17px;
+  color: var(--clr-secondary);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.h3 {
+  font-size: 24px;
+  color: var(--clr-text-card);
+}
+
+.pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+}
+
+.pills {
+  font-size: 12px;
+  padding: 8px 12px;
+  color: var(--clr-text-card);
+  border-radius: 4px;
+  display: inline-block;
+  background-color: var(--clr-img-300);
+}
+
+#section-header,
+#section-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#section-header > div,
+#section-footer > div {
+  width: 68px;
+  height: 127px;
+}
+
+#section-header > div:last-child {
+  background: url(../images/bird.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#section-footer > div:first-child {
+  background: url(../images/bird-2.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#about-me > .container > .card {
+  background-color: var(--clr-img-300);
+  padding-inline: 12px;
+}
+
+#about-me > .container > .card > .card-body > img {
+  margin-top: 40px;
+}
+
+#about-me > .container > .card > .card-body > .pill-list {
+  margin-top: 24px;
+}
+
+#about-me > .container > .card > .card-body > .pill-list > .pills {
+  background-color: var(--clr-secondary);
+  color: var(--clr-green-900);
+}
+
+#about-me > .intro {
+  margin-block: 64px;
+}
+
+#about-me > .container > .card > .card-body {
+  height: auto;
+  padding-bottom: 24px;
+}
+
+#about-me > .intro > p {
+  padding-inline: 12px;
+  margin-block: 24px;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 32px;
+  font-weight: 400;
+  color: var(--clr-text-about);
 }
