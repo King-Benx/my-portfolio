@@ -33,6 +33,7 @@ body {
 h2 {
   font-size: 40px;
   line-height: 52px;
+  font-weight: 700;
   color: var(--clr-accent);
 }
 
@@ -45,7 +46,7 @@ header > button,
 
 #section-header > h2,
 #section-footer > button {
-  width: 50%;
+  width: 60%;
 }
 
 header {
@@ -82,12 +83,16 @@ header > div > a {
 #intro h1 {
   margin-block: 64px;
   font-size: 40px;
-  font-weight: 800;
+  font-weight: 700;
+  line-height: 52px;
   color: var(--clr-accent);
 }
 
-#secondary {
+#secondary p {
   font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  color: var(--clr-accent);
 }
 
 #intro > h1 > span {
@@ -98,7 +103,7 @@ header > div > a {
   margin-block: 58px;
 }
 
-.social > ul {
+ul {
   list-style: none;
 }
 
@@ -151,7 +156,7 @@ header > div > a {
 .card > .card-body {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  height: 222px;
+  height: 240px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -168,8 +173,18 @@ header > div > a {
   cursor: pointer;
 }
 
-.h3 {
+.button:hover {
+  background-color: var(--btn-clr-secondary);
+}
+
+.button:active {
+  background-color: var(--btn-clr-primary);
+}
+
+h3 {
   font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
   color: var(--clr-text-card);
 }
 
@@ -230,7 +245,7 @@ header > div > a {
   margin-top: 24px;
 }
 
-#about-me > .container > .card > .card-body > .pill-list > .pills {
+#about-me > .container > .card > .card-body > .pill-list > li > .pills {
   background-color: var(--clr-secondary);
   color: var(--clr-green-900);
 }
