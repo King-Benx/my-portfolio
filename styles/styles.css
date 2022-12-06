@@ -13,6 +13,7 @@
   --clr-text-card: #3a4a42;
   --clr-text-about: #42526e;
   --clr-placeholder: #6b778c;
+  --clr-textarea: #091e42;
 }
 
 *,
@@ -96,12 +97,17 @@ header > div > a {
   color: var(--clr-accent);
 }
 
-#contact > span {
+.social > ul > li > a {
+  text-decoration: none;
+}
+
+#contact > a {
   font-size: 20px;
   color: var(--clr-text-about);
   font-weight: 400;
   line-height: 32px;
   margin-block-start: 17px;
+  text-decoration: none;
 }
 
 #intro > h1 > span {
@@ -123,10 +129,6 @@ ul {
 .social > ul > li {
   display: inline;
   padding-inline: 0.3rem;
-}
-
-.social > ul > li > a {
-  text-decoration: none;
 }
 
 #recent-works,
@@ -301,6 +303,10 @@ h3 {
   margin-block: 12px;
   border: 1px solid var(--clr-gray);
   border-radius: 4px;
+}
+
+#contact-form > div > textarea::placeholder {
+  color: var(--clr-textarea);
 }
 
 #contact > h2 {
