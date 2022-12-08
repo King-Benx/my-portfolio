@@ -36,6 +36,7 @@ h2 {
   font-size: 40px;
   line-height: 52px;
   font-weight: 700;
+  margin-inline: auto;
   color: var(--clr-accent);
 }
 
@@ -61,10 +62,30 @@ header {
   padding-inline: 24px;
 }
 
-header > div > a {
+a {
   text-decoration: none;
   color: var(--clr-dark);
   font-size: 1.2rem;
+}
+
+header > .nav {
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+
+.social > ul > li {
+  display: inline;
+  padding-inline: 0.3rem;
+}
+
+header > .nav > ul > li {
+  display: inline;
+  padding-inline: 10px;
+}
+
+footer {
+  display: none;
 }
 
 #headline {
@@ -126,11 +147,6 @@ ul {
   list-style: none;
 }
 
-.social > ul > li {
-  display: inline;
-  padding-inline: 0.3rem;
-}
-
 #recent-works,
 #about-me,
 #contact {
@@ -185,6 +201,7 @@ ul {
   font-size: 17px;
   color: var(--clr-secondary);
   border-radius: 4px;
+  max-width: 159px;
   border: none;
   cursor: pointer;
 }
@@ -331,4 +348,163 @@ h3 {
   background-position: right;
   z-index: 100;
   margin-inline-end: -22px;
+}
+
+#recent-works > h2 {
+  max-width: 9ch;
+  word-wrap: break-word;
+}
+
+@media (min-width: 450px) {
+  .top {
+    background-image: url(../images/header-large.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+  }
+
+  header > .nav {
+    margin-block: 26px;
+    display: inline;
+    position: sticky;
+  }
+
+  .humberger,
+  #email-contact,
+  header > div > a,
+  .submit-section > .social {
+    display: none;
+  }
+
+  #headline,
+  #form-submit > div:last-child {
+    background: none;
+  }
+
+  #contact h2 {
+    font-size: 24px;
+  }
+
+  #intro h1 {
+    margin-block-end: 24px;
+  }
+
+  #recent-works > .container,
+  #about-me > .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer {
+    display: block;
+    text-align: center;
+  }
+
+  #recent-works > h2 {
+    max-width: 100%;
+    word-wrap: none;
+  }
+
+  #contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-inline: 0;
+    padding-inline: 24px;
+  }
+
+  #headline {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  #section-header > div:last-child,
+  #section-footer > div:first-child {
+    background: none;
+  }
+
+  .intro {
+    background-image: url(../images/about-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-inline: 10%;
+    background-image: url(../images/contact-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #secondary > p,
+  #about-me > .intro > p {
+    margin: 24px 20%;
+  }
+
+  #headline > button {
+    margin-block: 74px;
+  }
+
+  #contact h2 {
+    flex: 1;
+    font-size: 24px;
+    text-align: left;
+  }
+
+  #form-submit {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  #form-submit > div:first-child {
+    display: none;
+  }
+
+  #contact form {
+    flex: 2;
+  }
+
+  #recent-works > .container,
+  #about-me > .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  footer {
+    display: block;
+    text-align: center;
+    border: 1px solid var(--clr-gray);
+  }
+}
+
+@media (min-width: 1366px) {
+  #contact {
+    padding-inline: 20%;
+    background-image: url(../images/contact-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .intro {
+    background-image: url(../images/about-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #section-header > div:last-child,
+  #section-footer > div:first-child {
+    background: none;
+  }
 }
