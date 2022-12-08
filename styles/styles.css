@@ -16,6 +16,10 @@
   --clr-textarea: #091e42;
 }
 
+html{
+  scroll-behavior:smooth;
+}
+
 *,
 *::after,
 *::before {
@@ -41,7 +45,7 @@ h2 {
 }
 
 header > button,
-#headline > button {
+#headline > a {
   border: none;
   background: transparent;
   cursor: pointer;
@@ -451,7 +455,8 @@ h3 {
     margin: 24px 20%;
   }
 
-  #headline > button {
+  #headline > a {
+    background: transparent;
     margin-block: 74px;
   }
 
