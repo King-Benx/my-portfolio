@@ -107,13 +107,41 @@ footer {
   padding-block: 3rem;
 }
 
-#intro h1 {
+h1 {
+  margin-inline: auto;
   margin-block: 64px;
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
   color: var(--clr-accent);
+  width:max-content;
 }
+
+#intro{
+  position: relative;
+}
+
+h1::before,
+h1::after{
+  content: "";  
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+h1::before{
+  background:var(--clr-secondary);
+  animation: writer 4s forwards;
+}
+
+@keyframes writer {
+  to{
+    left:100%;
+  }
+}
+
 
 #secondary p {
   font-size: 20px;
@@ -390,9 +418,10 @@ h3 {
     font-size: 24px;
   }
 
-  #intro h1 {
-    margin-block-end: 24px;
+  #intro{
+    position: relative;
   }
+
 
   #recent-works > .container,
   #about-me > .container {
@@ -466,6 +495,7 @@ h3 {
       opacity: 0;
     }
   }
+  
   #contact h2 {
     flex: 1;
     font-size: 24px;
