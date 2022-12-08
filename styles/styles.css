@@ -314,6 +314,11 @@ h3 {
 
 #about-me > .container > .card > .card-body > img {
   margin-top: 40px;
+  transition: transform 1s;
+}
+
+#about-me>.container>.card:hover .card-body > img{
+  transform:rotateY(180deg);
 }
 
 #about-me > .container > .card > .card-body > .pill-list {
