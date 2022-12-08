@@ -44,6 +44,12 @@ h2 {
   color: var(--clr-accent);
 }
 
+a {
+  text-decoration: none;
+  color: var(--clr-dark);
+  font-size: 1.2rem;
+}
+
 header > button,
 #headline > a {
   border: none;
@@ -64,12 +70,6 @@ header {
   align-items: center;
   padding-block: 10px;
   padding-inline: 24px;
-}
-
-a {
-  text-decoration: none;
-  color: var(--clr-dark);
-  font-size: 1.2rem;
 }
 
 header > .nav {
@@ -114,44 +114,39 @@ h1 {
   font-weight: 700;
   line-height: 52px;
   color: var(--clr-accent);
-  width:max-content;
+  width: max-content;
 }
 
-#intro{
+#intro {
   position: relative;
 }
 
 h1::before,
-h1::after{
-  content: "";  
+h1::after {
+  content: "";
   position: absolute;
-  top:0;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
 }
 
-h1::before{
-  background:var(--clr-secondary);
+h1::before {
+  background: var(--clr-secondary);
   animation: writer 4s forwards;
 }
 
 @keyframes writer {
-  to{
-    left:100%;
+  to {
+    left: 100%;
   }
 }
-
 
 #secondary p {
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
   color: var(--clr-accent);
-}
-
-.social > ul > li > a {
-  text-decoration: none;
 }
 
 #contact > a {
@@ -317,8 +312,8 @@ h3 {
   transition: transform 1s linear;
 }
 
-#about-me>.container>.card:hover .card-body > img{
-  transform:rotateY(360deg);
+#about-me > .container > .card:hover .card-body > img {
+  transform: rotateY(360deg);
 }
 
 #about-me > .container > .card > .card-body > .pill-list {
@@ -423,10 +418,9 @@ h3 {
     font-size: 24px;
   }
 
-  #intro{
+  #intro {
     position: relative;
   }
-
 
   #recent-works > .container,
   #about-me > .container {
@@ -489,6 +483,10 @@ h3 {
     margin: 24px 20%;
   }
 
+  .social > ul > li > a {
+    text-decoration: none;
+  }
+
   #headline > a {
     background: transparent;
     margin-block: 74px;
@@ -500,7 +498,7 @@ h3 {
       opacity: 0;
     }
   }
-  
+
   #contact h2 {
     flex: 1;
     font-size: 24px;
