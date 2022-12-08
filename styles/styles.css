@@ -16,8 +16,8 @@
   --clr-textarea: #091e42;
 }
 
-html{
-  scroll-behavior:smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 *,
@@ -458,8 +458,14 @@ h3 {
   #headline > a {
     background: transparent;
     margin-block: 74px;
+    animation: blinker 1s linear infinite;
   }
 
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
   #contact h2 {
     flex: 1;
     font-size: 24px;
