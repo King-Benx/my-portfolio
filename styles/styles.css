@@ -465,6 +465,7 @@ h3 {
   h1 {
     max-width: max-content;
   }
+
   #section-header > div:last-child,
   #section-footer > div:first-child {
     background: none;
