@@ -124,7 +124,6 @@ h1 {
   font-weight: 700;
   line-height: 52px;
   color: var(--clr-accent);
-  width: max-content;
 }
 
 #intro {
@@ -463,6 +462,9 @@ h3 {
 }
 
 @media (min-width: 768px) {
+  h1 {
+    max-width: max-content;
+  }
   #section-header > div:last-child,
   #section-footer > div:first-child {
     background: none;
