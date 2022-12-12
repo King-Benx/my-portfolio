@@ -32,6 +32,10 @@ This project is the beginning of my simple portfolio tailored to mobile devices.
 
 **[My Portfolio]** is a simple project demonstrating my portfolio on a mobile device.
 
+## 🚀 VIEW ONLINE
+
+<a name="<https://king-benx.github.io/my-portfolio/>">https://king-benx.github.io/my-portfolio/</a>
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
