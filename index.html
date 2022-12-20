@@ -11,23 +11,25 @@
     <div class="container">
       <div class="top">
       <header>
-        <div><a href="index.html">Welcome</a></div>
-          <div class="nav">
+        <div><a id="brand" href="index.html">Welcome</a></div>
+          <input type="checkbox" id="nav-toggle" class="nav-toggle">
+          <nav class="nav">
             <ul>
               <li>
-                <a href="#recent-works">Portolio</a>
+                <a onclick="linkClicked()" href="#recent-works">Portolio</a>
               </li>
               <li>
-                <a href="#about-me">About</a>
+                <a onclick="linkClicked()" href="#about-me">About</a>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <a onclick="linkClicked()" href="#contact">Contact</a>
               </li>
             </ul>
-          </div>
-        <button class="humberger">
-          <img src="images/humbager.png" alt="humbagar" />
-        </button>
+          </nav>
+        <label for="nav-toggle" class="humberger">
+          <img id="humberger" src="images/humbager.png" alt="humbagar" />
+          <span id="humberger-close">X</span>
+        </label>
       </header>
       <section id="headline">
         <div id="intro">
@@ -364,5 +366,6 @@
         </div>
       </footer>
     </div>
+      <script src="./js/scripts.js"></script>
   </body>
 </html>
