@@ -1,9 +1,9 @@
-/* eslint-disable no-unused-vars */
 const brand = document.getElementById('brand');
 const humberger = document.getElementById('humberger');
 const humbergerClose = document.getElementById('humberger-close');
 const navigation = document.querySelector('nav');
 const navToggle = document.getElementById('nav-toggle');
+const navLinks = document.querySelectorAll('.nav-link');
 
 function toggleNavigation(flag) {
   if (flag === true) {
@@ -32,3 +32,9 @@ function toggle() {
     toggleNavigation(false);
   }
 }
+
+navLinks.forEach((it) => {
+  it.addEventListener('click', () => {
+    toggle();
+  });
+});
