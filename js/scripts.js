@@ -25,3 +25,7 @@ navToggle.addEventListener('change', (e) => {
     toggleNavigation(false);
   }
 });
+
+function toggle() {
+  toggleNavigation(false);
+}
