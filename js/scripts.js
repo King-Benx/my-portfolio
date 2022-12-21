@@ -4,7 +4,7 @@ const humbergerClose = document.getElementById('humberger-close');
 const navigation = document.querySelector('nav');
 const navToggle = document.getElementById('nav-toggle');
 
-function handleSidebar(flag) {
+function toggleNavigation(flag) {
   if (flag === true) {
     navigation.style = 'transform:scale(1,1)';
     brand.style = 'visibility:hidden;';
@@ -20,8 +20,8 @@ function handleSidebar(flag) {
 
 navToggle.addEventListener('change', (e) => {
   if (e.target.checked === true) {
-    handleSidebar(true);
+    toggleNavigation(true);
   } else {
-    handleSidebar(false);
+    toggleNavigation(false);
   }
 });
