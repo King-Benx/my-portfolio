@@ -200,6 +200,7 @@
               required
               id="email"
               name="email"
+              pattern="[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
             />
           </div>
           <div>
@@ -213,7 +214,7 @@
           <div id="form-submit">
             <div></div>
             <div class="submit-section">
-              <input type="submit" class="button" value="Get in touch" />
+              <input type="submit" id="submit-button" class="button" value="Get in touch" /><span class="form-errors"></span>
               <div class="social">
                 <ul>
                   <li>

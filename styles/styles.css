@@ -371,12 +371,18 @@ h3 {
   align-items: center;
 }
 
+#form-submit > .submit-section > .form-errors{
+  padding-inline: 12px;
+  color: rgb(167, 101, 101);
+}
+
 #section-header > div,
 #section-footer > div,
 #form-submit > div {
   width: 68px;
   height: 127px;
 }
+
 
 #contact > form,
 #contact-form > div,

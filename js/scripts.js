@@ -124,6 +124,11 @@ const cardTitle = document.getElementById('card-title');
 const pillModalList = document.getElementById('pill-list');
 const modalDescription = document.getElementById('description');
 
+const formErrors = document.querySelector('.form-errors');
+const emailField = document.getElementById('email');
+const submitButton = document.getElementById('submit-button');
+const form = document.getElementById('contact-form');
+
 function toggleNavigation(flag) {
   if (flag === true) {
     navigation.style = 'transform:scale(1,1)';
