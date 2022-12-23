@@ -75,6 +75,42 @@ header > .nav > ul > li > a:hover {
   color: var(--clr-text-primary);
 }
 
+.button {
+  padding: 12px;
+  background-color: var(--btn-clr-secondary);
+  font-size: 17px;
+  color: var(--clr-secondary);
+  border-radius: 4px;
+  max-width: 159px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--btn-clr-secondary);
+}
+
+.button:active {
+  background-color: var(--btn-clr-primary);
+}
+
+.submit-section > .button {
+  margin-block: 12px;
+}
+
+.modal > .modal-footer > .button,
+.modal > .modal-title > .modal-footer > a {
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 3%;
+  line-height: 24px;
+  margin: 0;
+  padding: 6px 6px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 header > button,
 #headline > a {
   border: none;
@@ -214,6 +250,15 @@ h1::before {
   }
 }
 
+.modal > .modal-body > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--clr-primary-text);
+  margin-block-end: 12px;
+}
+
 #secondary p {
   font-size: 20px;
   line-height: 28px;
@@ -290,30 +335,13 @@ h1::before {
   align-items: center;
 }
 
-.button {
-  padding: 12px;
-  background-color: var(--btn-clr-secondary);
-  font-size: 17px;
-  color: var(--clr-secondary);
-  border-radius: 4px;
-  max-width: 159px;
-  border: none;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: var(--btn-clr-secondary);
-}
-
-.button:active {
-  background-color: var(--btn-clr-primary);
-}
-
 h3 {
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
   color: var(--clr-text-card);
+  max-width: 17ch;
+  word-wrap: break-word;
 }
 
 .pill-list {
@@ -370,9 +398,20 @@ h3 {
   background-position: left;
 }
 
+.modal > .modal-image img {
+  width: 100%;
+  margin: auto;
+}
+
 #about-me > .container > .card {
   background-color: var(--clr-img-300);
   padding-inline: 12px;
+}
+
+.modal > .modal-footer > .button > span > img,
+.modal > .modal-title > .modal-footer > .button > span > img {
+  height: 24px;
+  width: 24px;
 }
 
 #about-me > .container > .card > .card-body > img {
@@ -382,6 +421,12 @@ h3 {
 
 #about-me > .container > .card:hover .card-body > img {
   transform: rotateY(360deg);
+}
+
+.modal .pill-list {
+  justify-content: flex-start;
+  gap: 8px;
+  margin-block: 12px;
 }
 
 #about-me > .container > .card > .card-body > .pill-list {
@@ -430,10 +475,6 @@ h3 {
   margin-inline: 6px;
 }
 
-.submit-section > .button {
-  margin-block: 12px;
-}
-
 .submit-section {
   width: 65%;
 }
@@ -453,6 +494,40 @@ h3 {
 #recent-works > h2 {
   max-width: 9ch;
   word-wrap: break-word;
+}
+
+.modal {
+  margin: auto;
+  padding: 16px;
+  border: 1px solid white;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.modal > .modal-image {
+  width: 100%;
+  position: relative;
+}
+
+.modal > .modal-image > .modal-close {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 8px;
+  color: var(--clr-secondary);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal > .modal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal > .modal-title > .modal-footer {
+  display: none;
 }
 
 @media (min-width: 450px) {
@@ -552,6 +627,29 @@ h3 {
 }
 
 @media (min-width: 768px) {
+  .modal {
+    width: 50%;
+  }
+
+  .modal > .modal-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .modal > .modal-title > .card-title {
+    width: 50%;
+  }
+
+  .modal > .modal-footer {
+    display: none;
+  }
+
+  .modal > .modal-title > .modal-footer {
+    display: flex;
+    gap: 12px;
+  }
+
   h1 {
     max-width: max-content;
   }
