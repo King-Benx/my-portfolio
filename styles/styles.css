@@ -643,7 +643,7 @@ h3 {
   }
 
   .modal {
-    width: 50%;
+    width: 70%;
   }
 
   .modal > .modal-title {
@@ -741,6 +741,10 @@ h3 {
 }
 
 @media (min-width: 1366px) {
+  .modal {
+    width: 50%;
+  }
+
   #contact {
     padding-inline: 20%;
     background-image: url(../images/contact-desktop.svg);
