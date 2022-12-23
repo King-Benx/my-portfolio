@@ -371,7 +371,7 @@ h3 {
   align-items: center;
 }
 
-#form-submit > .submit-section > .form-errors{
+#form-submit > .submit-section > .form-errors {
   padding-inline: 12px;
   color: rgb(167, 101, 101);
 }
@@ -382,7 +382,6 @@ h3 {
   width: 68px;
   height: 127px;
 }
-
 
 #contact > form,
 #contact-form > div,
