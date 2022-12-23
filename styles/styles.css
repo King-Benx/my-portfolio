@@ -627,6 +627,21 @@ h3 {
 }
 
 @media (min-width: 768px) {
+  .modal > .modal-image > .modal-close {
+    float: right;
+    display: flex;
+    position: relative;
+    padding: 2px;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    border-radius: 8px;
+    align-items: center;
+    background-color: #ebecf0;
+    color: var(--clr-placeholder);
+    text-align: right;
+  }
+
   .modal {
     width: 50%;
   }
