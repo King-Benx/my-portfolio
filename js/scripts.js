@@ -100,6 +100,7 @@ function createCard(id, name, pillList) {
   card.append(cardBody);
   projectSection.append(card);
 }
+
 function generateProjects() {
   for (let i = 0; i < data.length; i += 1) {
     const { id, name, pillList } = data[i];
@@ -123,6 +124,11 @@ const modalImage = document.getElementById('cover-image');
 const cardTitle = document.getElementById('card-title');
 const pillModalList = document.getElementById('pill-list');
 const modalDescription = document.getElementById('description');
+
+const formErrors = document.querySelector('.form-errors');
+const emailField = document.getElementById('email');
+const submitButton = document.getElementById('submit-button');
+const form = document.getElementById('contact-form');
 
 function toggleNavigation(flag) {
   if (flag === true) {
@@ -182,4 +188,19 @@ openModals.forEach((button) => {
     document.body.style = 'filter: blur(5px)';
     modal.showModal();
   });
+});
+
+submitButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  let errors = null;
+  if (emailField.validity.typeMismatch || emailField.validity.patternMismatch) {
+    errors = 'Invalid email format';
+    formErrors.innerText = errors;
+  }
+  if (!errors) {
+    formErrors.style = 'color: #008552';
+    formErrors.innerText = 'Message sent';
+    form.submit();
+    form.reset();
+  }
 });
