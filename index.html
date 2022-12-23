@@ -7,6 +7,7 @@
     <title>Ben</title>
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
+
   <body>
     <div class="container">
       <div class="top">
@@ -109,10 +110,18 @@
               <img src="images/icon-languages.svg" alt="" />
               <h3>Languages</h3>
               <ul class="pill-list">
-                <li><div class="pills">JavaScript</div></li>
-                <li><div class="pills">Ruby</div></li>
-                <li><div class="pills">Html</div></li>
-                <li><div class="pills">CSS</div></li>
+                <li>
+                  <div class="pills">JavaScript</div>
+                </li>
+                <li>
+                  <div class="pills">Ruby</div>
+                </li>
+                <li>
+                  <div class="pills">Html</div>
+                </li>
+                <li>
+                  <div class="pills">CSS</div>
+                </li>
               </ul>
             </div>
           </div>
@@ -121,11 +130,21 @@
               <img src="images/icon-frameworks.svg" alt="framework" />
               <h3>Frameworks</h3>
               <ul class="pill-list">
-                <li><div class="pills">Bootstrap</div></li>
-                <li><div class="pills">Ruby on rails</div></li>
-                <li><div class="pills">RSpec</div></li>
-                <li><div class="pills">Capybara</div></li>
-                <li><div class="pills">Selenium</div></li>
+                <li>
+                  <div class="pills">Bootstrap</div>
+                </li>
+                <li>
+                  <div class="pills">Ruby on rails</div>
+                </li>
+                <li>
+                  <div class="pills">RSpec</div>
+                </li>
+                <li>
+                  <div class="pills">Capybara</div>
+                </li>
+                <li>
+                  <div class="pills">Selenium</div>
+                </li>
               </ul>
             </div>
           </div>
@@ -137,10 +156,18 @@
                 <li>
                   <div class="pills">Codekit</div>
                 </li>
-                <li><div class="pills">Github</div></li>
-                <li><div class="pills">Codepen</div></li>
-                <li><div class="pills">Gitlab</div></li>
-                <li><div class="pills">Terminal</div></li>
+                <li>
+                  <div class="pills">Github</div>
+                </li>
+                <li>
+                  <div class="pills">Codepen</div>
+                </li>
+                <li>
+                  <div class="pills">Gitlab</div>
+                </li>
+                <li>
+                  <div class="pills">Terminal</div>
+                </li>
               </ul>
             </div>
           </div>
@@ -222,6 +249,39 @@
         </form>
         <a href="mailto:ben@mail.com" id="email-contact">ben@mail.com</a>
       </section>
+
+      <dialog class="modal" id="modal">
+        <div class="modal-image">
+          <span class="modal-close">x</span>
+          <img id="cover-image" src="" alt="project cover" />
+        </div>
+        <div class="modal-title">
+          <div class="card-title">
+            <h3 id="card-title"></h3>
+          </div>
+          <div class="modal-footer">
+            <a class="button" href=""
+              >See Live <span><img src="./images/live.svg" /></span
+            ></a>
+            <a class="button" href=""
+              >See Source <span><img src="./images/icon-github.svg" /></span
+            ></a>
+          </div>
+        </div>
+        <ul id="pill-list" class="pill-list"></ul>
+        <div class="modal-body">
+          <p id="description"></p>
+        </div>
+        <div class="modal-footer">
+          <a class="button" href=""
+            >See Live <span><img src="./images/live.svg" /></span
+          ></a>
+          <a class="button" href=""
+            >See Source <span><img src="./images/icon-github.svg" /></span
+          ></a>
+        </div>
+      </dialog>
+
       <footer>
         <div class="social">
           <ul>
