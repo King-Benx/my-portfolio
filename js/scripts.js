@@ -159,6 +159,7 @@ navLinks.forEach((it) => {
 });
 
 closeModal.addEventListener('click', () => {
+  document.body.style = 'filter:unset';
   modal.close();
 });
 
@@ -178,6 +179,7 @@ openModals.forEach((button) => {
       item.append(content);
       pillModalList.append(item);
     }
+    document.body.style = 'filter: blur(5px)';
     modal.showModal();
   });
 });
