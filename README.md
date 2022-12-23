@@ -92,6 +92,12 @@ To run the project, execute the following command:
 - Twitter: [@bataringaya_ben](https://twitter.com/bataringaya_ben)
 - LinkedIn: [Benard Asiimwe Bataringaya](https://linkedin.com/in/linkedinhandle)
 
+**Ikechkwu Dennis**
+-Github: [@boniface193](https://github.com/boniface193)
+
+**Wai Yan Phyo**
+-Github: [@oyhpnayiaw](https://github.com/oyhpnayiaw)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
